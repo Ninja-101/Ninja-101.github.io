@@ -1,289 +1,118 @@
----
----
-
-//
-// IMPORTS
-//
-
-@import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
-}
-
-body {
-	background : url("https://images3.alphacoders.com/135/thumb-1920-135625.jpg");
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
-
+270
+​
+271
     @include mobile {
+272
       margin: 0 10px;
+273
       color: $blue;
+274
     }
+275
   }
+276
 }
-
+277
+​
+278
 //
+279
 // .main
+280
 //
-
+281
+​
+282
 .posts > .post {
+283
   padding-bottom: 2em;
+284
   border-bottom: 1px solid $lightGray;
+285
 }
-
+286
+​
+287
 .posts > .post:last-child {
+288
   padding-bottom: 1em;
+289
   border-bottom: none;
+290
 }
-
+291
+​
+292
 .post {
+293
   blockquote {
+294
     margin: 1.8em .8em;
+295
     border-left: 2px solid $gray;
+296
     padding: 0.1em 1em;
+297
     color: $gray;
+298
     font-size: 22px;
+299
     font-style: italic;
+300
   }
-
+301
+​
+302
   .comments {
+303
     margin-top: 10px;
+304
   }
-
+305
+​
+306
   .read-more {
+307
     text-transform: uppercase;
+308
     font-size: 15px;
+309
   }
+310
 }
-
+311
+​
+312
 .wrapper-footer {
+313
   margin-top: 50px;
+314
   border-top: 1px solid #ddd;
+315
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+316
+  background-color: #3385ff;
+317
 }
-
+318
+​
+319
 footer {
+320
   padding: 20px 0;
+321
   text-align: center;
+322
 }
-
+323
+​
+324
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
+325
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+326
 @import "highlights";
+327
 @import "svg-icons";
+328
